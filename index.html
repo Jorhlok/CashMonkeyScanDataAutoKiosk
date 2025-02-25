@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom Book Data</title>
+    <style>
+                /* Global Styles */
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            font-size: 4.11rem; /* 5% smaller than previous value */
+            color: #2c3e50;
+            margin-bottom: 25px; /* Adjusted for 5% smaller value */
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1140px; /* 5% smaller than previous value */
+            padding: 14px; /* Adjusted for 5% smaller value */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 9.5px rgba(0, 0, 0, 0.1); /* Slightly adjusted */
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 14px; /* Adjusted for 5% smaller value */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        label {
+            font-size: 1.88rem; /* 5% smaller than previous value */
+            color: #2c3e50;
+            margin-right: 9.5px; /* Adjusted for 5% smaller value */
+        }
+        
+        input[type="checkbox"] {
+            margin-left: 9.5px; /* Adjusted for 5% smaller value */
+            transform: scale(1.00); /* Reduced by 5% */
+        }
+        
+        input[type="date"] {
+            padding: 7.6px; /* Adjusted for 5% smaller value */
+            font-size: 1.88rem; /* 5% smaller than previous value */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            font-size: 2.12rem; /* 5% smaller than previous value */
+            padding: 11.4px 16.15px; /* Adjusted for 5% smaller value */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        #refreshStatus {
+            margin-top: 19px; /* Adjusted for 5% smaller value */
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.88rem; /* 5% smaller than previous value */
+            display: none;
+        }
+        
+        /* Output Section */
+        .output {
+            margin-top: 28.5px; /* Adjusted for 5% smaller value */
+            width: 100%;
+            max-height: 570px; /* Adjusted for 5% smaller value */
+            overflow-y: auto;
+            padding-right: 19px; /* Adjusted for 5% smaller value */
+        }
+        
+        .route-section {
+            margin-bottom: 19px; /* Adjusted for 5% smaller value */
+            padding: 14.25px; /* Adjusted for 5% smaller value */
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            box-shadow: 0 2px 4.75px rgba(0, 0, 0, 0.1); /* Adjusted for 5% smaller value */
+        }
+        
+        .route-section h3 {
+            font-size: 2.4rem; /* 5% smaller than previous value */
+            color: #2980b9;
+            margin-bottom: 9.5px; /* Adjusted for 5% smaller value */
+        }
+        
+        .route-section p {
+            font-size: 3.53rem; /* 5% smaller than previous value */
+            margin: 4.75px 0; /* Adjusted for 5% smaller value */
+        }
+        
+        .grand-total-section {
+            margin-top: 38px; /* Adjusted for 5% smaller value */
+            padding: 19px; /* Adjusted for 5% smaller value */
+            background-color: #eaf2f8;
+            border-radius: 5px;
+            box-shadow: 0 2px 4.75px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Grand Total Section 5% bigger */
+        .grand-total-section h3 {
+            font-size: 8.54vw; /* 5% bigger than previous value */
+            margin-bottom: 9.5px; /* Adjusted for 5% smaller value */
+        }
+        
+        .grand-total-section p {
+            font-size: 7.39vw; /* 5% bigger than previous value */
+            margin: 4.75px 0; /* Adjusted for 5% smaller value */
+        }
+        
+        /* Media Queries for Responsiveness */
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 4.18rem; /* 5% smaller than previous value */
+            }
+        
+            label {
+                font-size: 1.88rem; /* 5% smaller than previous value */
+            }
+        
+            input[type="date"],
+            button {
+                font-size: 1.88rem; /* 5% smaller than previous value */
+            }
+        
+            .route-section h3 {
+                font-size: 1.88rem; /* 5% smaller than previous value */
+            }
+        
+            .route-section p {
+                font-size: 1.76rem; /* 5% smaller than previous value */
+            }
+        
+            .grand-total-section h3 {
+                font-size: 3.13rem; /* 5% bigger than previous value */
+            }
+        
+            .grand-total-section p {
+                font-size: 2.47rem; /* 5% bigger than previous value */
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            h1 {
+                font-size: 4.22rem; /* 5% smaller than previous value */
+            }
+        
+            label {
+                font-size: 1.76rem; /* 5% smaller than previous value */
+            }
+        
+            input[type="date"],
+            button {
+                font-size: 1.62rem; /* 5% smaller than previous value */
+            }
+        
+            .route-section h3 {
+                font-size: 1.62rem; /* 5% smaller than previous value */
+            }
+        
+            .route-section p {
+                font-size: 1.41rem; /* 5% smaller than previous value */
+            }
+        
+            .grand-total-section h3 {
+                font-size: 2.47rem; /* 5% bigger than previous value */
+            }
+        
+            .grand-total-section p {
+                font-size: 2.23rem; /* 5% bigger than previous value */
+            }
+        }
+        
+        @media screen and (min-width: 1280px) {
+            h1 {
+                font-size: 4.22rem; /* 5% smaller than previous value */
+            }
+        
+            .container {
+                width: 70%;
+                padding: 28.5px; /* Adjusted for 5% smaller value */
+            }
+        
+            label {
+                font-size: 1.66rem; /* 5% smaller than previous value */
+            }
+        
+            input[type="date"],
+            button {
+                font-size: 1.41rem; /* 5% smaller than previous value */
+            }
+        
+            .route-section h3 {
+                font-size: 1.41rem; /* 5% smaller than previous value */
+            }
+        
+            .route-section p {
+                font-size: 1.18rem; /* 5% smaller than previous value */
+            }
+        
+            .grand-total-section h3 {
+                font-size: 2.18rem; /* 5% bigger than previous value */
+            }
+        
+            .grand-total-section p {
+                font-size: 1.91rem; /* 5% bigger than previous value */
+            }
+        }
+    </style>
+
+    
+    
+    
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Ecomm Books</h1>
+
+        <div class="form-group">
+            <label for="auto-refresh">Enable Auto-Refresh</label>
+            <input type="checkbox" id="auto-refresh">
+        </div>
+
+        <div class="form-group">
+            <label for="toggleRoutesCheckbox">Show Routes</label>
+            <input type="checkbox" id="toggleRoutesCheckbox">
+        </div>
+
+        <div class="form-group">
+            <label for="date-picker">Select a Date:</label>
+            <input type="date" id="date-picker" value="2025-02-19">
+        </div>
+
+        <button id="run-report">Run Report</button>
+
+        <div id="refreshStatus" class="loading">Report is running...</div>
+
+        <div id="output" class="output"></div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
