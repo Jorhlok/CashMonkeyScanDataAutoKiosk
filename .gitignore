@@ -8,7 +8,9 @@ lerna-debug.log*
 .pnpm-debug.log*
 node_modules/
 old/
-
+buildwin/
+buildlinux/
+buildmac/
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
