@@ -1,7 +1,7 @@
 {
-  "name": "report-fetcher",
+  "name": "CashMonkeyData",
   "version": "1.0.0",
-  "description": "Electron app to fetch report data",
+  "description": "Electron app to fetch CashMonkey listing/prescan data and give individual user details",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
