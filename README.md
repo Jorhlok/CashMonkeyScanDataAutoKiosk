@@ -1,4 +1,3 @@
-```markdown
 # CashMonkeyData
 
 `CashMonkeyData` is an Electron app designed to fetch CashMonkey listing/prescan data and provide individual user details. The application gathers relevant data from CashMonkey, prescans, and listings, and breaks it down per user for easier analysis.
@@ -40,7 +39,7 @@ This will install the dependencies specified in the `package.json` file, such as
 The application requires certain credentials to function properly. These should be stored in a `.env` file located at the following path:
 
 ```
-/Users/malachiwatkins/Desktop/CashMonekyScanData/buildwin/cmData-win32-x64/resources/app
+/CashMonekyScanData/buildwin/cmData-win32-x64/resources/app
 ```
 
 ### Required Environment Variables
@@ -110,4 +109,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 If you encounter any issues or have questions, feel free to open an issue in the repository or reach out.
-```
