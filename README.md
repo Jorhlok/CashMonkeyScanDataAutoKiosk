@@ -21,11 +21,9 @@ Before you begin, ensure you have the following tools installed:
 To get started, clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MalachiWatkins/CashMonekyScanData
 cd CashMonkeyData
 ```
-
-Replace `<repository-url>` with the actual URL of your repository.
 
 ## Installing Dependencies
 
