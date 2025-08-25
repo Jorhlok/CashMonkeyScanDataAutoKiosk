@@ -276,5 +276,6 @@ async function fetchDataAndUpdateUI(date) {
     });
 }
 
-
-
+//modifications for automatically starting
+autoRefreshCheckbox.click();
+runButton.click();
