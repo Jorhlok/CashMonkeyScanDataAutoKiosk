@@ -22,7 +22,7 @@ Before you begin, ensure you have the following tools installed:
 To get started, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/MalachiWatkins/CashMonekyScanData
+git clone https://github.com/Jorhlok/CashMonkeyScanDataAutoKiosk
 cd CashMonkeyData
 ```
 
@@ -43,6 +43,7 @@ The application requires certain credentials to function properly. These should 
 ```
 /CashMonekyScanData/buildwin/cmData-win32-x64/resources/app
 ```
+Edit: I don't know about the above but in Linux, just use the .env file that exists alongside the project files.
 
 ### Required Environment Variables
 
