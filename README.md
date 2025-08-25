@@ -2,6 +2,8 @@
 
 `CashMonkeyData` is an Electron app designed to fetch CashMonkey listing/prescan data and provide individual user details. The application gathers relevant data from CashMonkey, prescans, and listings, and breaks it down per user for easier analysis.
 
+This version contains edits to automatically launch in 1080p and start the automatic refresh for the purposes of using it as a display kiosk. The intent is to run this program on a copy of Debian or other version of Linux with Xorg manually configured for 1080p through an HDMI port and to use a systemd service to automatically start this program on boot without a desktop environment. Then the mini PC or thin client or whatever can be plugged into a TV and used as a display kiosk. 
+
 ## Features
 
 - Fetches data from CashMonkey listings and prescans.
