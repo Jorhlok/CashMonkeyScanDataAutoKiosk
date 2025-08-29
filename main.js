@@ -83,6 +83,7 @@ function createWindow() {
     win = new BrowserWindow({
         width: 1920,
         height: 1080,
+        fullscreen: true,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,  // Set to false to allow node integration
